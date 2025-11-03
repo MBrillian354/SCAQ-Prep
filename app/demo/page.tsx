@@ -14,12 +14,12 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background p-8">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <div className="min-h-screen bg-background py-8">
+      <div className="container mx-auto space-y-8 px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="space-y-2">
-          <h1 className="text-4xl font-bold tracking-tight">UI Components Demo</h1>
-          <p className="text-muted-foreground text-lg">
+          <h1 className="text-slate-800">UI Components Demo</h1>
+          <p className="text-slate-600">
             A showcase of all available UI components in this project
           </p>
         </div>
@@ -27,8 +27,8 @@ export default function Page() {
         {/* Button Component */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Button</h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-slate-800">Button</h2>
+            <p className="text-slate-600">
               Displays a button with various variants and sizes
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Page() {
               </div>
               
               <div className="space-y-2">
-                <h3 className="text-sm font-medium">Button Sizes</h3>
+                <h3 className="text-sm font-medium text-slate-600">Button Sizes</h3>
                 <div className="flex flex-wrap items-center gap-2">
                   <Button size="sm">Small</Button>
                   <Button size="default">Default</Button>
@@ -61,7 +61,7 @@ export default function Page() {
               </div>
 
               <div className="space-y-2">
-                <h3 className="text-sm font-medium">Button States</h3>
+                <h3 className="text-sm font-medium text-slate-600">Button States</h3>
                 <div className="flex flex-wrap gap-2">
                   <Button>Normal</Button>
                   <Button disabled>Disabled</Button>
@@ -74,8 +74,8 @@ export default function Page() {
         {/* Input & Label Component */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Input & Label</h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-slate-800">Input & Label</h2>
+            <p className="text-slate-600">
               Form input elements with labels
             </p>
           </div>
@@ -112,8 +112,8 @@ export default function Page() {
         {/* Card Component */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Card</h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-slate-800">Card</h2>
+            <p className="text-slate-600">
               Container component with header, content, and footer sections
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function Page() {
             </Card>
 
             <Card>
-              <CardHeader className="border-b">
+              <CardHeader className="border-b border-slate-200">
                 <CardTitle>Card with Footer</CardTitle>
                 <CardDescription>Includes a footer section</CardDescription>
               </CardHeader>
@@ -156,7 +156,7 @@ export default function Page() {
                   Main content goes here. The footer is separated below.
                 </p>
               </CardContent>
-              <CardFooter className="border-t justify-between">
+              <CardFooter className="border-t border-slate-200 justify-between">
                 <Button variant="ghost">Cancel</Button>
                 <Button>Save</Button>
               </CardFooter>
@@ -176,7 +176,7 @@ export default function Page() {
                   <Input id="card-input" placeholder="Enter name" />
                 </div>
               </CardContent>
-              <CardFooter className="border-t">
+              <CardFooter className="border-t border-slate-200">
                 <Button className="w-full">Submit</Button>
               </CardFooter>
             </Card>
@@ -186,8 +186,8 @@ export default function Page() {
         {/* Tabs Component */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Tabs</h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-slate-800">Tabs</h2>
+            <p className="text-slate-600">
               Organize content into separate views with tab navigation
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function Page() {
                   <TabsTrigger value="password">Password</TabsTrigger>
                   <TabsTrigger value="settings">Settings</TabsTrigger>
                 </TabsList>
-                <TabsContent value="account" className="space-y-4 mt-4">
+                <TabsContent value="account" className="mt-4 space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="username">Username</Label>
                     <Input id="username" placeholder="Enter username" />
@@ -215,7 +215,7 @@ export default function Page() {
                   </div>
                   <Button>Update Account</Button>
                 </TabsContent>
-                <TabsContent value="password" className="space-y-4 mt-4">
+                <TabsContent value="password" className="mt-4 space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="current">Current Password</Label>
                     <Input id="current" type="password" />
@@ -226,7 +226,7 @@ export default function Page() {
                   </div>
                   <Button>Change Password</Button>
                 </TabsContent>
-                <TabsContent value="settings" className="space-y-4 mt-4">
+                <TabsContent value="settings" className="mt-4 space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="notifications">Email Notifications</Label>
                     <Input id="notifications" type="email" placeholder="notifications@example.com" />
@@ -244,8 +244,8 @@ export default function Page() {
         {/* Combined Example */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Combined Example</h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-slate-800">Combined Example</h2>
+            <p className="text-slate-600">
               A practical example using multiple components together
             </p>
           </div>
@@ -261,7 +261,7 @@ export default function Page() {
                   <TabsTrigger value="personal" className="flex-1">Personal Info</TabsTrigger>
                   <TabsTrigger value="contact" className="flex-1">Contact</TabsTrigger>
                 </TabsList>
-                <TabsContent value="personal" className="space-y-4 mt-4">
+                <TabsContent value="personal" className="mt-4 space-y-4">
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="firstname">First Name</Label>
@@ -277,7 +277,7 @@ export default function Page() {
                     <Input id="dob" type="date" />
                   </div>
                 </TabsContent>
-                <TabsContent value="contact" className="space-y-4 mt-4">
+                <TabsContent value="contact" className="mt-4 space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="reg-email">Email</Label>
                     <Input id="reg-email" type="email" placeholder="john.doe@example.com" />
@@ -289,7 +289,7 @@ export default function Page() {
                 </TabsContent>
               </Tabs>
             </CardContent>
-            <CardFooter className="border-t justify-between">
+            <CardFooter className="border-t border-slate-200 justify-between">
               <Button variant="outline">Reset</Button>
               <div className="flex gap-2">
                 <Button variant="ghost">Cancel</Button>
